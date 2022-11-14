@@ -143,12 +143,7 @@ h2.headerTitle{
   font-weight: bold;
 }
 /* FORM INPUT */
-.form-control:focus{
-  border: noen;
-  outline: none;
-}  
-input[type="text"].form-control,
-select.form-control{
+.form-control{
   width: 100%;
   height: 40px;
   font-size: 14px;
@@ -157,18 +152,14 @@ select.form-control{
   border: 1px solid var(--color-gray-200);
   background-color: #fff;
 }
+.form-control:focus{
+  border: noen;
+  outline: none;
+}
 input[type="text"].form-control::placeholder{
   font-size: 14px;
   color: #ccc;
 }
-select.form-control{
-  width: 24px;
-  height: 30px;
-  padding: 4px 8px;
-  background:#fff url('@/assets/images/icon-down@2x.png') no-repeat right;
-  background-size: 24px 24px;
-}
-
 /* BUTTON */
 .btn{
   font-size: 14px;
@@ -737,11 +728,7 @@ footer{
   width: 100px;
   height: 40px;
   overflow: hidden;
-  color: #333;
-  font-weight: 600;
-  /* border-radius: 4px; */
-  border-radius: 20px;
-  padding: 9px 9px 9px 0;
+  border-radius: 4px;
   border: 1px solid var(--color-gray-200);
   background-color: var(--color-white);
 }
@@ -749,39 +736,56 @@ footer{
   display: inline-block;
   font-size: 14px;
   width: 50%;
-  /* line-height: 40px; */
+  line-height: 40px;
   text-align: center;
-  border-radius: 12px;
 }
 .content-wrap .status-list > ul > li + li{
   margin-left: 10px;
 }
-[class^="status-"] .number{
+[class^="status-"]{
   color: var(--color-white);
 }
-.content-wrap .status-default > .number{
+.content-wrap .status-default > .name{
   background-color: var(--color-gray-400);
 }
 .content-wrap .status-default > .number{
-  color: var(--color-white);
+  color:var(--color-gray-400);
 }
-.content-wrap .status-green > .number{
+.content-wrap .status-green > .name{
   background-color: var(--color-green);
 }
-.content-wrap .status-pink > .number{
+.content-wrap .status-green > .number{
+  color: var(--color-green);
+}
+.content-wrap .status-pink > .name{
   background-color: var(--color-pink);
 }
-.content-wrap .status-blue > .number{
+.content-wrap .status-pink > .number{
+  color: var(--color-pink);
+}
+.content-wrap .status-blue > .name{
   background-color: var(--color-blue);
 }
-.content-wrap .status-cyan > .number{
+.content-wrap .status-blue > .number{
+  color: var(--color-blue);
+}
+.content-wrap .status-cyan > .name{
   background-color: var(--color-cyan);
 }
-.content-wrap .status-yellow > .number{
+.content-wrap .status-cyan > .number{
+  color: var(--color-cyan);
+}
+.content-wrap .status-yellow > .name{
   background-color: var(--color-yellow);
 }
-.content-wrap .status-red > .number{
+.content-wrap .status-yellow > .number{
+  color: var(--color-yellow);
+}
+.content-wrap .status-red > .name{
   background-color: var(--color-red);
+}
+.content-wrap .status-red > .number{
+  color: var(--color-red);
 }
 /* 키워드 필터 */
 .content-wrap .pageCount-wrap{
@@ -790,7 +794,6 @@ footer{
 }
 .content-wrap .pagekeyWord-wrap{
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .content-wrap .keyWord-filter{
@@ -1020,17 +1023,6 @@ footer{
   }
 }
 
-
-
-/* 검색 Media */
-.searchArea table.search-type02{
-  display: none;
-}
-
-
-
-
-
 @media screen and (max-width: 1024px) {
   .container .content-wrap .content-header{
     margin-bottom: 10px;
@@ -1049,21 +1041,13 @@ footer{
   .content-wrap .pc-searchOption{
     display: none;
   } */
-  .header-wrap .joinInfo-wrap .memberInfo .myName{
+  .header-wrap .joinInfo-wrap .memberInfo .myName,
+  .content-wrap .pc-searchOption{
     display: none;
   }
-  /* .content-wrap .mo-searchOption{
+  .content-wrap .mo-searchOption{
     display: block;
-  } */
-
-
-
-
-  .content-wrap .pc-searchOption{
-    margin-top: 16px;
-    text-align: center;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -1110,17 +1094,18 @@ footer{
 
 
   /* 검색 Media */
-  .searchArea table.search-type01{
-    display: none;
+  /* .searchArea table{
+    table-layout: fixed;
   }
-  .searchArea table.search-type02{
+  .searchArea table > tbody > tr > td{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .searchArea table > tbody > tr > .subject{
     display: block;
-  }
-  .grid-wrap {
-    overflow: auto;
-    padding-bottom: 20px;
-  }
-
+    background-color: #ccd;
+  } */
 }
 
 @media screen and (max-width: 480px) {

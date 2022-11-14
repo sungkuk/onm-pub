@@ -46,7 +46,7 @@ export default new Vuex.Store({
       }
     },
 
-    MOBILE_SEARCH_OPEN(state, value) {
+    MOBILE_SEARCH_OPEN(statee) {
       state.isActiveModal = true
     },
 

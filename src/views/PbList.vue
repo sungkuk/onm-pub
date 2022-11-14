@@ -141,7 +141,7 @@
           <td>-</td>
         </tr>
 
-        <tr>
+        <!-- <tr>
           <td class="tal">vuetify test</td>
           <td class="tal"></td>
           <td class="tal"></td>
@@ -152,7 +152,7 @@
           <td>-</td>
           <td>-</td>
           <td>-</td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
   </div>

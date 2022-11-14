@@ -142,10 +142,32 @@
   border-bottom: none;
 }
 .ag-row .ag-cell {
+  height: 36px;
   text-align: center;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 8px;
+  padding-right: 8px; */
 }
 .ag-row-selected::before{
   background-color: #ebf7ff;
+}
+.ag-paging-panel{
+  display: none;
+}
+
+/* .rag-amber{
+  border: 1px solid red;
+} */
+
+
+
+
+
+.ag-theme-alpine{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .ag-theme-alpine{
+    width: 1600px;
+  }
 }

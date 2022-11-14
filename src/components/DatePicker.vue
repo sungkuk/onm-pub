@@ -73,23 +73,8 @@ export default {
 			return monthName[i];
 		},
     getHeaderTitleMonth(date) {
-      const monthName = [
-      "01월",
-      "02월",
-      "03월",
-      "04월",
-      "05월",
-      "06월",
-      "07월",
-      "08월",
-      "09월",
-      "10월",
-      "11월",
-      "12월",
-      ];
-      let i = new Date(date).getMonth(date)
       const year = new Date(date).getFullYear(date)
-      return year + '.' + monthName[i]
+      return year + '.' + this.getMonth(date)
       },
 	},
 }

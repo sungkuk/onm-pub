@@ -40,4 +40,4 @@ let ErrorList = [
   },
 ]
 
-export { NoticeList,ErrorList }
+export { NoticeList, ErrorList }

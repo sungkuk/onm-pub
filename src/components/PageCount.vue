@@ -9,6 +9,13 @@
       @click="addClass(idx)">
       {{ key }}
     </button>
+    <!-- AG GRID 참조 -->
+    <!-- <select class="form-control" style="width: 92px;">
+      <option value="10" selected="">10개씩</option>
+      <option value="100">30개씩</option>
+      <option value="500">50개씩</option>
+      <option value="1000">1000개씩</option>
+    </select> -->
   </div>
 </template>
 

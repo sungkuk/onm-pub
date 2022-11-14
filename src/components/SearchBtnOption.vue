@@ -19,7 +19,7 @@
       </button>
     </div>
 
-    <div class="btn-toggle-searchOption mo-searchOption">
+    <!-- <div class="btn-toggle-searchOption mo-searchOption">
       <button
         type="button"
         class="btn btn-default btn-orange"
@@ -36,7 +36,8 @@
         m검색옵션
         <i class="icon icon-sm icon-download-option" />
       </button>
-    </div>
+    </div> -->
+    
   </section>
 </template>
 
