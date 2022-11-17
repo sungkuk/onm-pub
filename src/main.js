@@ -6,7 +6,6 @@ import vuetify from './plugins/vuetify'
 
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
-
 import '@/assets/css/vuetify-grid.css'
 import '@/assets/css/style.css'
 

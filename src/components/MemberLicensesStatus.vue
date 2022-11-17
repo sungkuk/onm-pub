@@ -41,7 +41,7 @@ export default {
     color: #fff;
     padding: 4px;
     border-radius: 4px;
-    background-color: #007fef;
+    background-color: #00a6ef;
   }
   .memberLicenses-wrap .licensesFailed{
     background-color: #999;

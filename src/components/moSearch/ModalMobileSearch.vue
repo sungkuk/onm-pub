@@ -123,7 +123,7 @@
 
 <script>
 import BtnResetSearch from '@/components/BtnResetSearch'
-import BtnDownloadSearch from '@/components/moSearch/BtnDownloadSearch.vue'
+import BtnDownloadSearch from '@/components/BtnDownloadSearch.vue'
 import DatePicker from '@/components/DatePicker'
 
 import { mapState } from 'vuex'

@@ -22,7 +22,7 @@ export default new Vuex.Store({
     searchIsActive: true,
     searchOption: true,
     checkboxShow: false,
-    isActiveModal: false,
+    // isActiveModal: false,
   },
   mutations: {
     SIDEMENU_TOGGLE(state) {
@@ -46,19 +46,15 @@ export default new Vuex.Store({
       }
     },
 
-    MOBILE_SEARCH_OPEN(statee) {
-      state.isActiveModal = true
-    },
-
-    MODAL_CLOSE(state) {
-      state.isActiveModal = false
-    },
+    // MODAL_CLOSE(state) {
+    //   state.isActiveModal = false
+    // },
 
     // 디바이스 해상도 1200이하
     RESIZE(state) {
       let windowSize = window.outerWidth
       state.windowSize = windowSize
-      if(state.windowSize <= 1200){
+      if(state.windowSize <= 768){
         state.sideBarisActive = false
       } else{
         state.deviceSideisActive = false

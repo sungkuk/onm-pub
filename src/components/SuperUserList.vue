@@ -1,10 +1,10 @@
 <template>
   <div
-    v-if="noticeIsActive"
-    class="noticeList">
+    v-if="superUserIsActive"
+    class="superUserList">
     <ul>
       <li
-        v-for="(item, idx) in noticeLists"
+        v-for="(item, idx) in superUserLists"
         :key="item.idx">
         <dl>
           <dt>
@@ -15,9 +15,16 @@
               @click="itemDel(idx)">
               삭제
             </button>
-            <span class="date">공지시간 : {{ item.date }}</span>
           </dt>
-          <dd>{{ item.textInfo }}</dd>
+          <dd>
+            <ul>
+              <li
+                v-for="text in item.content"
+                :key="text">
+                <span class="text-crop">{{ text.text }}</span>
+              </li>
+            </ul>
+          </dd>
         </dl>
       </li>
     </ul>
@@ -26,22 +33,22 @@
 </template>
 
 <script>
-import { NoticeList } from '@/assets/js/noticeMessage'
+import { SuperUserList } from '@/assets/js/noticeMessage'
 
 export default {
   props: {
-    noticeIsActive: {
+    superUserIsActive: {
       type: Boolean,
     },
   },
   data() {
     return {
-      noticeLists: NoticeList,
+      superUserLists: SuperUserList,
     }
   },
   methods: {
     itemDel(index) {
-      this.noticeLists.splice(index, 1)
+      this.superUserLists.splice(index, 1)
     }
   }
 }

@@ -1,6 +1,18 @@
 <template>
-  <button class="show-cell" />
+  <button class="show-cell" @click="test"/>
 </template>
+
+<script>
+
+export default {
+ methods: {
+  test() {
+    alert('b')
+  }
+ }
+}
+</script>
+
 
 <style scoped>
   .show-cell{

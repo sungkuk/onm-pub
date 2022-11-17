@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination text-center mt-8">
+  <div class="pagination">
     <button class="btn-paging first">
       <span class="blind">처음페이지</span>
     </button>
@@ -26,9 +26,10 @@
 
 <script>
 export default {
+
   data() {
     return {
-      isActive: 0
+      isActive: 0,
     }
   }, 
   methods: {
@@ -48,9 +49,9 @@ export default {
     line-height: 28px;
     margin-left: 6px;
     text-align: center;
-    border-radius: 4px;
+    /* border-radius: 4px;
     border: 1px solid #d4dde0;
-    background-color: #f8f9fb;
+    background-color: #f8f9fb; */
   }
   .pagination,
   .pagination > ul{
@@ -66,7 +67,8 @@ export default {
   .pagination li.active{
     font-weight: bold;
     color: #fff;
-    background-color: #0a306d;
+    background-color: #f47725;
+    border-radius: 4px;
   }
   .pagination button.first{
     background: url('@/assets/images/icon-first@2x.png') center no-repeat;

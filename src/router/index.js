@@ -2,8 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import PbList from '@/views/PbList.vue'
 
-
-
 Vue.use(VueRouter)
 
 const routes = [

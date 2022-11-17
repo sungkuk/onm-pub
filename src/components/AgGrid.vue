@@ -11,10 +11,9 @@
       :rowSelection="rowSelection"
       :autoGroupColumnDef="autoGroupColumnDef"
       :rowGroupPanelShow="rowGroupPanelShow"
-      :pagination="true"
-      :paginationPageSize="paginationPageSize"
-      :paginationNumberFormatter="paginationNumberFormatter"
+      :pagination="false"
     />
+    <div class="ag-paging">1페이지/99페이지</div>
     <pagination />
   </div>
 </template>
@@ -25,15 +24,12 @@ import { AgGridVue } from 'ag-grid-vue'
 import GridPlusBtn from '@/components/GridPlusBtn'
 import MemberLicensesStatus from '@/components/MemberLicensesStatus'
 
-import ImgTest from '@/components/ImgTest'
-
 export default {
   components: {
     AgGridVue,
     Pagination,
     GridPlusBtn,
-    MemberLicensesStatus,
-    ImgTest
+    MemberLicensesStatus
   },
   data() {
     return {
@@ -43,7 +39,7 @@ export default {
       defaultColDef: {
         flex: 1,
         // editable: true,
-        // resizable: true,
+        resizable: true,
         // sortable: true,
         // filter: true,
       },
@@ -66,7 +62,7 @@ export default {
       { field: '충전기ID', cellClass: 'countryCell',},
       { field: '충전기명', },
       { field: '충전소ID' },
-      { field: '충전소명', width: 170, minWidth: 170, cellRenderer:'ImgTest.app-header'},
+      { field: '충전소명', width: 170, minWidth: 170,},
       { field: '충전기상태', cellStyle:{"textAlign":"right"}},
       { field: '충전기제조사',},
       { field: '충전기모델명' },
@@ -95,5 +91,5 @@ export default {
 </script>
 
 <style scoped>
-
+  
 </style>

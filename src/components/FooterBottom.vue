@@ -11,6 +11,26 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    font-size: 12px;
+    color: #555;
+    border-top: 1px solid #d5dde0;
+    background-color: #fff;
+    opacity: .9;
+    padding: 10px 50px;
+    text-align: center;
+  }
+  .footer-wrap address{
+    font-style: normal;
+  }
 </style>

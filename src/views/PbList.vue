@@ -140,7 +140,6 @@
           <td>-</td>
           <td>-</td>
         </tr>
-
         <!-- <tr>
           <td class="tal">vuetify test</td>
           <td class="tal"></td>

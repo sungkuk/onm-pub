@@ -2,10 +2,6 @@
   <div class="side-wrap">
     <div 
       class="sideMenu">
-      <!-- LOGO -->
-      <h1 class="skSignet-logo">
-        <img src="@/assets/images/skSignet-logo.png" alt="skSignet">
-      </h1>
       <!-- SIDE MENU -->
       <div class="menu">
         <ul>
@@ -20,7 +16,7 @@
                   @click="sideMenuEvent">
                   <span :class="['menuIcon-' + idx]" />
                     {{ menu.menuTitle }}
-                  <i class="icon icon-default icon-arrowDown-white" />
+                  <!-- <i class="icon icon-default icon-arrowDown-white" /> -->
                 </a>
               </dt>
               <dd>
@@ -35,7 +31,10 @@
                         :key="menu.idx">
                         <a href="#"
                           title="depth2"
-                          @click="sideMenuEvent">{{ menu.menuTitle }}</a>
+                          @click="sideMenuEvent">
+                          {{ menu.menuTitle }}
+                          <i class="icon icon-default icon-arrowDown-white" />
+                        </a>
                         <template
                           v-if="menu.child">  
                           <div class="depth3">
@@ -116,19 +115,231 @@ export default {
 </script>
 
 <style scoped>
-.slide-enter-active,
-.slide-leave-active {
-  transition: max-height .1s ease;
-  max-height: 100px;
-}
-.slide-enter-to, 
-.slide-leave {
-  max-height:100px;
-  overflow: hidden;
-}
-.slide-enter, 
-.slide-leave-to {
-  overflow: hidden;
-  max-height: 0;
-}
+  .btn-sideToggle{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    right: 0;
+    background:var(--color-orange) url('@/assets/images/icon-sideMenu@2x.png') center right 2px no-repeat;
+    background-size: 20px 20px;
+    z-index: 9;
+  }
+  .side-wrap{
+    position: absolute;
+    top: 70px;
+    width: 280px;
+    height: calc(100% - 120px);
+    /* transition: .1s; */
+  }
+  .side-wrap .sideMenu{
+    position: absolute;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding: 0 15px;
+    background-color: #f47725;
+    transition: .3s;
+    z-index: 99;
+  }
+  .sideMenu > .menu{
+    margin-top: 45px;
+  }
+  .sideMenu > .menu li a{
+    color: #fff;
+    font-weight: 100;
+  }
+  .sideMenu > .menu > ul > li > dl > dt{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 12px;
+  }
+  .sideMenu > .menu > ul > li > dl > dt > a{
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  
+  .sideMenu > .menu > ul > li.selected dt{
+    background-color: #dc5d1c;
+    border-radius: 10px;
+  }
+  .sideMenu > .menu > ul > li.selected dt a{
+    color: #fff;
+    font-weight: 500;
+  }
+  .sideMenu > .menu > ul > li.selected .depth2 > ul > li.selected > a,
+  .sideMenu > .menu > ul > li.selected .depth3 > ul > li.selected > a{
+    color: #f6fe00;
+    font-weight: 600;
+  }
+  .sideMenu > .menu > ul > li.selected .depth2 > ul > li.selected > a >.icon-arrowDown-white{
+    transform: rotate(270deg);
+  }
+      
+  /*****************  Depth-2 *****************/
+  .sideMenu > .menu > ul > li > dl > dd > .depth2{
+    display: none;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .16);
+  }
+  .sideMenu > .menu > ul > li > dl .depth2 > ul > li {
+    padding: 0 0 10px 40px ;
+  }
+  .sideMenu > .menu > ul > li > dl .depth2 > ul > li > a{
+    position: relative;
+  }
+  .sideMenu > .menu > ul > li > dl .depth2 > ul > li > a > .icon-arrowDown-white{
+    position: absolute;
+    left: -24px;
+  }
+  .sideMenu > .menu > ul > li.selected > dl > dd > .depth2{
+    display: block;
+  }
+  /*****************  Depth-3 *****************/
+  .sideMenu > .menu > ul > li > dl .depth3{
+    display: none;
+    padding-left: 5px;
+  }
+  .sideMenu > .menu > ul > li > dl .depth3 > ul > li{
+    margin-top: 10px;
+  }
+  .sideMenu > .menu > ul > li.selected > dl > dd > .depth2 > ul > li.selected .depth3{
+    display: block;
+  }
+  .sideMenu > .menu > ul > li.selected .depth3 li.selected a{
+    font-weight: 600;
+  }
+  /***************** Side Menu Close *****************/
+  .sidebarClose .side-wrap{
+    width: 0;
+    left: 0;
+  }
+  .sidebarClose .side-wrap .sideMenu{
+    left: -260px;
+    /* width: 0; */
+    transition: .2s;
+  }
+  .sidebarClose .side-wrap .btn-sideToggle{
+    transition: .18s;
+    right: -20px;
+  }
+  /*********************************************************
+    - SideMenu ICON
+  *********************************************************/
+  [class^="menuIcon-"]{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-0{
+    background: url('@/assets/images/chart@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-1{
+    background: url('@/assets/images/people@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-2{
+    background: url('@/assets/images/charge@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-3{
+    background: url('@/assets/images/gift@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-4{
+    background: url('@/assets/images/cards@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-5{
+    background: url('@/assets/images/airdrop@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-6{
+    background: url('@/assets/images/graph@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li .menuIcon-7{
+    background: url('@/assets/images/setting-2@2x-on.png') no-repeat;
+    background-size: 24px
+  }
+  /* .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-0{
+    background: url('@/assets/images/chart@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-1{
+    background: url('@/assets/images/people@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-2{
+    background: url('@/assets/images/charge@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-3{
+    background: url('@/assets/images/gift@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-4{
+    background: url('@/assets/images/cards@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-5{
+    background: url('@/assets/images/airdrop@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-6{
+    background: url('@/assets/images/graph@2x-on.png') no-repeat;
+    background-size: 24px;
+  }
+  .side-wrap > .sideMenu > .menu > ul > li.selected .menuIcon-7{
+    background: url('@/assets/images/setting-2@2x-on.png') no-repeat;
+    background-size: 24px
+  } */
+  /*********************************************************
+  - Media Query
+  *********************************************************/
+  @media screen and (max-width: 768px) {
+    .side-wrap{
+      width: 0;
+      z-index: 9;
+      height: calc(100% - 127px);
+    }
+    .side-wrap .sideMenu{
+      left: -260px;
+      width: 100%;
+    }
+    .side-wrap .sideMenu > .menu{
+      margin-top: 60px;
+    }
+    .side-wrap .btn-sideToggle{
+      display: none;
+    }
+    .deviceSideMenu-open .side-wrap{
+      width: 260px;
+    }
+    .deviceSideMenu-open .side-wrap .sideMenu{
+      left: 0;
+    }
+  }
+
+  /* Animation */
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: max-height .1s ease;
+    max-height: 100px;
+  }
+  .slide-enter-to, 
+  .slide-leave {
+    max-height:100px;
+    overflow: hidden;
+  }
+  .slide-enter, 
+  .slide-leave-to {
+    overflow: hidden;
+    max-height: 0;
+  }
 </style>

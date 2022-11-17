@@ -1,4 +1,32 @@
-let NoticeList = [
+const SuperUserList = [
+  {
+    title: '슈퍼유저리스트 타이틀-01',
+    content: [
+      {
+        text: '슈퍼유저 내용이 들어갑니다.-01'
+      },
+      {
+        text: '슈퍼유저 내용이 들어갑니다.-02'
+      }
+    ]
+  },
+  {
+    title: '슈퍼유저리스트 타이틀-01',
+    content: [
+      {
+        text: '슈퍼유저 내용이 들어갑니다.-01'
+      },
+      {
+        text: '슈퍼유저 내용이 들어갑니다.-02'
+      },
+      {
+        text: '슈퍼유저 내용이 들어갑니다.-03'
+      }
+    ]
+  },
+]
+
+const NoticeList = [
   {
     title: '[완료/게시종료] 3kW 충전 자동 강제종료 이슈-01',
     date: '2022-10-01 09:00:12',
@@ -16,7 +44,7 @@ let NoticeList = [
   }
 ]
 
-let ErrorList = [
+const ErrorList = [
   { 
     title: '용산주차빌딩 공영주차장 (SIG00000802)-01',
     modelInfo: '시그넷EV(14kW)',
@@ -40,4 +68,4 @@ let ErrorList = [
   },
 ]
 
-export { NoticeList, ErrorList }
+export { SuperUserList, NoticeList, ErrorList }
