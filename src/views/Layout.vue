@@ -9,7 +9,7 @@
     <side-bar />
     <!-- CONTENT -->   
     <div class="content-wrap">
-      <content-title />
+      <head-title title="충전기 상태"/>
       <!-- 상태영역 -->
       <div class="statusArea-wrap">
         <status-data />
@@ -25,15 +25,16 @@
               <v-checkbox
                 v-model="searchCheck"
                 value="운영사"
+                color="orange"
                 v-if="checkboxShow" />
               <label for="">운영사</label>
             </div>
           </div>
           <div class="col-lg-2 col-md-4">
-            <!-- <v-combobox
+            <v-combobox
               v-model="model"
               :items="items"
-              class="multiCombox"
+              class="multiCombox text-crop"
               label="멀티선택"
               hide-selected
               multiple
@@ -54,19 +55,20 @@
                   </v-icon>
                 </v-chip>
               </template>
-            </v-combobox> -->
-            <v-select
+            </v-combobox>
+            <!-- <v-select
               :items="items"
               class="selectBox"
               label="전체"
               dense
-              solo />
+              solo /> -->
           </div>
           <div class="col-lg-1 col-md-2">
             <div class="checkbox-inline">
               <v-checkbox
                 v-model="searchCheck"
                 value="충전기구분"
+                color="orange"
                 v-if="checkboxShow" />
                 <label for="">충전기구분</label>
             </div>  
@@ -84,6 +86,7 @@
               <v-checkbox
                 v-model="searchCheck"
                 value="권역"
+                color="orange"
                 v-if="checkboxShow" />
                 <label for="">권역</label>
             </div>
@@ -101,6 +104,7 @@
               <v-checkbox
                 v-model="searchCheck"
                 value="시군구"
+                color="orange"
                 v-if="checkboxShow" />
                 <label for="">시군구</label>
             </div>
@@ -118,6 +122,7 @@
               <v-checkbox
                 v-model="searchCheck"
                 value="운영시작일"
+                color="orange"
                 v-if="checkboxShow" />
               <label for="">운영시작일</label>
             </div>
@@ -129,6 +134,7 @@
             <div class="checkbox-inline">
               <v-checkbox
                 v-model="searchCheck"
+                color="orange"
                 value="설치일"
                 v-if="checkboxShow" />
               <label for="">설치일</label>
@@ -142,6 +148,7 @@
               <v-checkbox
                 v-model="searchCheck"
                 value="충전소명"
+                color="orange"
                 v-if="checkboxShow" />
               <label for="">충전소명</label>
             </div>
@@ -154,6 +161,7 @@
               <v-checkbox
                 v-model="searchCheck"
                 value="충전소ID"
+                color="orange"
                 v-if="checkboxShow" />
               <label for="">충전소ID</label>
             </div>
@@ -178,12 +186,10 @@
       <ag-grid />
       <!--// GRID -->
     </div>
-    <!--// CONTENT -->
-    <footer>
-      <footer-bottom/>
-    </footer>
-      <!-- <modal-mobile-search
-        :items="items" /> -->
+    <!--// CONTENT -->  
+    <footer-bottom/>
+    <!-- <modal-mobile-search
+      :items="items" /> -->
   </main>
 </template>
 
@@ -191,7 +197,7 @@
 import HeaderTop from '@/components/HeaderTop'
 import SideBar from '@/components/SideBar'
 import FooterBottom from '@/components/FooterBottom'
-import ContentTitle from '@/components/ContentTitle'
+import HeadTitle from '@/components/HeadTitle'
 import StatusData from '@/components/StatusData'
 import SearchBtnOption from '@/components/SearchBtnOption'
 import CheckBox from '@/components/CheckBox'
@@ -199,20 +205,17 @@ import DatePicker from '@/components/DatePicker'
 import PageCount from '@/components/PageCount'
 import SearchFilter from '@/components/SearchFilter'
 import BtnResetSearch from '@/components/BtnResetSearch'
-
-import SubTitle from '@/components/SubTitle'
-
 import BtnDownloadSearch from '@/components/BtnDownloadSearch.vue'
 // import ModalMobileSearch from '@/components/moSearch/ModalMobileSearch'
-import { mapState, mapMutations } from 'vuex'
 import AgGrid from '@/components/AgGrid'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   components: {
     HeaderTop,
     SideBar,
     FooterBottom,
-    ContentTitle,
+    HeadTitle,
     StatusData,
     SearchBtnOption,
     CheckBox,
@@ -221,7 +224,6 @@ export default {
     SearchFilter,
     BtnResetSearch,
     BtnDownloadSearch,
-    SubTitle,
     // ModalMobileSearch,
     AgGrid
   },

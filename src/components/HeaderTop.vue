@@ -169,11 +169,9 @@ export default {
     // ...mapMutations({
     //   deviceMenuToggle : 'DEVICEMENU_TOGGLE'
     // })
-
     deviceMenuToggle(){
       this.$store.commit('DEVICEMENU_TOGGLE')
-    }
-
+    },
   } 
 }
 </script>

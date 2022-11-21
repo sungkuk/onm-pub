@@ -140,6 +140,18 @@
           <td>-</td>
           <td>-</td>
         </tr>
+        <tr>
+          <td class="tal">플랫폼 고객사(CPO) 등록</td>
+          <td class="tal"></td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_020'}" target="_blank">@/views/ONM_IA_ADM_SUP_020.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
         <!-- <tr>
           <td class="tal">vuetify test</td>
           <td class="tal"></td>

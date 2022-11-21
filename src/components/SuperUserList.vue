@@ -46,10 +46,12 @@ export default {
       superUserLists: SuperUserList,
     }
   },
+  mounted() {
+  },
   methods: {
     itemDel(index) {
       this.superUserLists.splice(index, 1)
-    }
+    },
   }
 }
 </script>

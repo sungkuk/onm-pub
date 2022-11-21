@@ -8,7 +8,6 @@ export default new Vuex.Store({
     windowSize: 0,
     sideBarisActive: false,
     deviceSideisActive: false,
-    title: "충전기 상태",
     locations: ['대시보드', '충전인프라 관리', '충전기 상태 및 제어', '충전기 상태'],
     statusLists: [
       { name: '끊김', number: 1},
@@ -60,7 +59,6 @@ export default new Vuex.Store({
         state.deviceSideisActive = false
       }
     },
-
   },
   actions: { 
   },

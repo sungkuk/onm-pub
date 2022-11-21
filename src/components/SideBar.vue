@@ -130,7 +130,7 @@ export default {
     position: absolute;
     top: 70px;
     width: 280px;
-    height: calc(100% - 120px);
+    height: calc(100% - 70px);
     /* transition: .1s; */
   }
   .side-wrap .sideMenu{
@@ -306,7 +306,7 @@ export default {
     .side-wrap{
       width: 0;
       z-index: 9;
-      height: calc(100% - 127px);
+      /* height: calc(100% - 127px); */
     }
     .side-wrap .sideMenu{
       left: -260px;

@@ -7,16 +7,15 @@
 
 <script>
 import Location from '@/components/Location'
-import { mapState } from 'vuex'
 
 export default {
   components: {
     Location
   },
-  computed: {
-    ...mapState([
-      'title',
-    ])
+  props: {
+    title: {
+      type: String
+    }
   }
 }
 </script>

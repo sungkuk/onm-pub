@@ -61,6 +61,14 @@ const routes = [
     component: () => import('@/components/Modal.vue')
   },
   {
+    path: '/ONM_IA_ADM_SUP_020',
+    name: 'ONM_IA_ADM_SUP_020',
+    component: () => import('@/views/ONM_IA_ADM_SUP_020.vue')
+  },
+
+
+  
+  {
     path: '/test',
     name: 'Test',
     component: () => import(
