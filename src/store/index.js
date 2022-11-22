@@ -21,7 +21,7 @@ export default new Vuex.Store({
     searchIsActive: true,
     searchOption: true,
     checkboxShow: false,
-    // isActiveModal: false,
+    isActiveModal: false,
   },
   mutations: {
     SIDEMENU_TOGGLE(state) {
@@ -44,10 +44,13 @@ export default new Vuex.Store({
         state.checkboxShow = false
       }
     },
-
-    // MODAL_CLOSE(state) {
-    //   state.isActiveModal = false
-    // },
+    
+    MODAL_OPEN(state) {
+      state.isActiveModal = true
+    },
+    MODAL_CLOSE(state) {
+      state.isActiveModal = false
+    },
 
     // 디바이스 해상도 1200이하
     RESIZE(state) {

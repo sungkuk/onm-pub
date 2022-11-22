@@ -50,6 +50,11 @@ const routes = [
     name: 'AgGrid',
     component: () => import('@/components/AgGrid.vue')
   },
+  {
+    path: '/SampleAgGrid',
+    name: 'SampleAgGrid',
+    component: () => import('@/components/SampleAgGrid.vue')
+  },
   // {
   //   path: 'moSearch/ModalMobileSearch',
   //   name: '/ModalMobileSearch',
@@ -61,11 +66,25 @@ const routes = [
     component: () => import('@/components/Modal.vue')
   },
   {
+    path: '/ONM_IA_ADM_SUP_010',
+    name: 'ONM_IA_ADM_SUP_010',
+    component: () => import('@/views/ONM_IA_ADM_SUP_010.vue')
+  },
+  {
     path: '/ONM_IA_ADM_SUP_020',
     name: 'ONM_IA_ADM_SUP_020',
     component: () => import('@/views/ONM_IA_ADM_SUP_020.vue')
   },
-
+  {
+    path: '/ONM_IA_ADM_SUP_030',
+    name: 'ONM_IA_ADM_SUP_030',
+    component: () => import('@/views/ONM_IA_ADM_SUP_030.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_031',
+    name: 'ONM_IA_ADM_SUP_031',
+    component: () => import('@/views/OnmIaAdmSup031.vue')
+  },
 
   
   {

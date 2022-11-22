@@ -6,9 +6,6 @@
 
 export default {
  methods: {
-  test() {
-    alert('b')
-  }
  }
 }
 </script>

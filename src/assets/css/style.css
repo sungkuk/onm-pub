@@ -40,6 +40,17 @@ b,strong{
   height: 0;
   width: 0;
 }
+.clearFix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right!important;
+}
 .bridge{
   margin: 0 5px;
 }
@@ -82,10 +93,10 @@ b,strong{
   width: 150px;
 }
 .mt-20{
-  margin-top: 20px;
+  margin-top: 20px!important;
 }
 .mb-20{
-  margin-bottom: 20px;
+  margin-bottom: 20px!important;
 }
 .icon{
   position: relative;
@@ -241,13 +252,15 @@ select.form-control{
   background-color: #aaa;
   border: none;
 }
-.btn.btn-md{
+.btn.btn-md,
+.btn.btn-sm{
   min-width: 40px;
   padding: 0 15px;
-  height: 30px;
+  height: 36px;
 }
 .btn.btn-sm{
-  padding: 8px 12px 7px;
+  height: 30px;
+  /* padding: 8px 12px 7px; */
 }
 .btn-fixed{
   min-width: 140px;
@@ -255,8 +268,19 @@ select.form-control{
 .btn + .btn{
   margin-left: 10px;
 }
+.btn-xsm{
+  font-size: 12px;
+  height: 24px!important;
+  line-height: 24px;
+}
 .btn-sm-page .btn + .btn{
   margin-left: 4px;
+}
+.btn-area{
+  margin-top: 20px;
+}
+.grid-wrap + .btn-area{
+  margin-top: 0;
 }
 /* .searchArea .btn-default{
   min-width: 150px;
@@ -418,7 +442,7 @@ select.form-control{
   SearchArea
 -------------------------------*/
 .content-wrap .searchArea{
-  padding: 20px 30px 30px;
+  padding: 20px 30px;
   padding-top: 20px;
   border-radius: 10px;
   border: 1px solid var(--color-gray-200);
@@ -440,7 +464,7 @@ select.form-control{
   height: 100%;
   background-color: #000;
   opacity: .7;
-  z-index: 9;
+  z-index: 99;
 }
 .dialog-wrap .dialog-container{
   position: fixed;
@@ -456,11 +480,11 @@ select.form-control{
 }
 .dialog-container .dialog-content{
   position: relative;
+  min-width: 320px;
   width: 100%;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   border-radius: 10px;
   background-color: #fff;
-  border: 1px solid #d4dde0;
   max-height: 90%;
   overflow-y: auto;
 }
@@ -468,23 +492,28 @@ select.form-control{
   position: relative;
   display: flex;
   align-items: center;
-  height: 44px;
-  margin-bottom: 20px;
+  height: 50px;
+  padding: 0 16px;
+  background-color: #f8f9fd;
   border-bottom: 1px solid #d4dde0;
 }
 .dialog-content .dialog-header h1{
-  font-size: 14px;
-  color: #0a306d;
+  font-size: 18px;
+  color: #333;
 }
 .dialog-header .header-btnClose{
   margin-left: auto;
   width: 24px;
   height: 24px;
-  background: url('@/assets/images/btn-close@2x.png') center no-repeat;
+  background: url('@/assets/images/btn-closeSmall@2x.png') center no-repeat;
   background-size: 24px 24px;
 }
 .dialog-content .dialog-body{
-  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  padding: 30px;
+  min-height: 100px;
 }
 .dialog-content .mo-search label{
   font-size: 14px;
@@ -496,16 +525,13 @@ select.form-control{
   margin-top: 10px;
 }
 .dialog-content .dialog-footer{
-  margin-left: -16px;
-  margin-right: -16px;
+  background-color: #aaa;
 }
 .dialog-content .dialog-footer .btn-modalClose{
   width: 100%;
   font-size: 14px;
   height: 40px;
   color: #fff;
-  border-radius: 0 0 9px 9px;
-  background-color: #1565e4;
 }
 /* Table */
 table{
@@ -608,6 +634,9 @@ table{
  - Media Query
 *********************************************************/
 @media screen and (max-width: 768px) {
+  .container .subject{
+    margin-top: 20px;
+  }
   .container.v-application{
     min-width: 100%;
   }

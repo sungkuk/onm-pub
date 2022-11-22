@@ -127,14 +127,37 @@
           <td>-</td>
           <td>-</td>
         </tr>
-
         <tr>
+          <td class="tal">Sample AG GRID</td>
+          <td class="tal"></td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name: 'SampleAgGrid'}" target="_blank">@/components/SampleAgGrid.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <!-- <tr>
           <td class="tal">Modal Search</td>
           <td class="tal"></td>
           <td class="tal"></td>
           <td></td>
           <td class="tal">
             <router-link :to="{name: 'Modal'}" target="_blank">@/components/Modal.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr> -->
+        <tr>
+          <td class="tal">플랫폼 고객사(CPO) 관리</td>
+          <td class="tal"></td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_010'}" target="_blank">@/views/ONM_IA_ADM_SUP_010.vue</router-link>
           </td>
           <td>-</td>
           <td>-</td>
@@ -151,6 +174,30 @@
           <td>-</td>
           <td>-</td>
           <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 고객사(CPO) 상세보기</td>
+          <td class="tal"></td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_030'}" target="_blank">@/views/ONM_IA_ADM_SUP_030.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">개인정보 마스킹 제거 - Modal</td>
+          <td class="tal"></td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_031'}" target="_blank">@/views/ONM_IA_ADM_SUP_031.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>Default-false</td>
         </tr>
         <!-- <tr>
           <td class="tal">vuetify test</td>

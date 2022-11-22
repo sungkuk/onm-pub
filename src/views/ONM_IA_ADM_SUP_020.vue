@@ -63,7 +63,7 @@
                   <td>
                     <div class="form-inline">
                       <input type="text" class="form-control" placeholder="우편번호" style="width: 100px;">
-                      <button type="button" class="btn btn-sm btn-gray ml-2">주소검색</button>
+                      <button type="button" class="btn btn-md btn-gray ml-2">주소검색</button>
                     </div>
                     <input type="text" class="form-control mt-1" placeholder="큰주소">
                     <input type="text" class="form-control mt-1" placeholder="상세주소">
@@ -88,7 +88,7 @@
           </div>
         </div>
         <!-- 고객사 담당자 정보 -->
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 subject">
           <sub-title title="고객사 담당자 정보" />
           <div class="table">
             <table>
@@ -152,7 +152,7 @@
                     <div class="form-inline">
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="우편번호" style="width: 100px;">
-                        <button type="button" class="btn btn-sm btn-gray ml-2">주소검색</button>
+                        <button type="button" class="btn btn-md btn-gray ml-2">주소검색</button>
                       </div>  
                       <div class="form-group">
                         <v-checkbox 
@@ -237,7 +237,7 @@
           </div>
         </div>
         <!-- 고객사 대시보드 템플릿 정보 -->
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 subject">
           <sub-title title="고객사 대시보드 템플릿 정보" />
           <div class="table">
             <table>
@@ -266,27 +266,21 @@
           </div>
           <!-- 비고 -->
           <sub-title class="mt-20" title="비고" />
-          <div class="table">
-            <table>
-              <colgroup>
-                <col width="30%">
-                <col width="*">
-              </colgroup>
-              <caption class="sr-only">비고</caption>
-              <tbody>
-                <tr>
-                  <th scope="row"><span>비고</span></th>
-                  <td>
-                    <textarea name="" id=""  style="height: 180px;" class="form-control" placeholder="비고"></textarea>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <textarea name="" id=""  style="height: 200px;" class="form-control" placeholder="비고"></textarea>
         </div>
       </div>
+
+      <div class="btn-area clearFix">
+        <div class="pull-left">
+          <button type="button" class="btn btn-default btn-yellow btn-fixed">목록</button>
+        </div>
+        <div class="pull-right">
+          <button type="button" class="btn btn-default btn-gray btn-fixed">초기화</button>
+          <button type="button" class="btn btn-default btn-orange btn-fixed">저장</button>
+        </div>
+      </div>
+
     </div>
-    
     <!--// CONTENT -->  
     <footer-bottom/>
   </main>
