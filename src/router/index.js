@@ -100,7 +100,42 @@ const routes = [
     name: 'ONM_IA_ADM_SUP_060',
     component: () => import('@/views/ONM_IA_ADM_SUP_060.vue')
   },
-  
+  {
+    path: '/ONM_IA_ADM_SUP_070',
+    name: 'ONM_IA_ADM_SUP_070',
+    component: () => import('@/views/ONM_IA_ADM_SUP_070.vue')
+  },
+  {
+    path: '/OnmIaAdmSup070P',
+    name: 'OnmIaAdmSup070P',
+    component: () => import('@/views/ONM_IA_ADM_SUP_070_P.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_080',
+    name: 'ONM_IA_ADM_SUP_080',
+    component: () => import('@/views/ONM_IA_ADM_SUP_080.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_090',
+    name: 'ONM_IA_ADM_SUP_090',
+    component: () => import('@/views/ONM_IA_ADM_SUP_090.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_100',
+    name: 'ONM_IA_ADM_SUP_100',
+    component: () => import('@/views/ONM_IA_ADM_SUP_100.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_110',
+    name: 'ONM_IA_ADM_SUP_110',
+    component: () => import('@/views/ONM_IA_ADM_SUP_110.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_120',
+    name: 'ONM_IA_ADM_SUP_120',
+    component: () => import('@/views/ONM_IA_ADM_SUP_120.vue')
+  },
+
   {
     path: '/test',
     name: 'Test',

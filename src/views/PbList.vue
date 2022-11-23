@@ -165,8 +165,8 @@
         </tr>
         <tr>
           <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">플랫폼 고객사관리</td>
           <td class="tal">플랫폼 고객사(CPO) 관리</td>
-          <td class="tal"></td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'ONM_IA_ADM_SUP_010'}" target="_blank">@/views/ONM_IA_ADM_SUP_010.vue</router-link>
@@ -177,8 +177,8 @@
         </tr>
         <tr>
           <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">플랫폼 고객사관리</td>
           <td class="tal">플랫폼 고객사(CPO) 등록</td>
-          <td class="tal"></td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'ONM_IA_ADM_SUP_020'}" target="_blank">@/views/ONM_IA_ADM_SUP_020.vue</router-link>
@@ -189,8 +189,8 @@
         </tr>
         <tr>
           <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">플랫폼 고객사관리</td>
           <td class="tal">플랫폼 고객사(CPO) 상세보기</td>
-          <td class="tal"></td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'ONM_IA_ADM_SUP_030'}" target="_blank">@/views/ONM_IA_ADM_SUP_030.vue</router-link>
@@ -201,8 +201,8 @@
         </tr>
         <tr>
           <td class="tal">플랫폼 통합관리</td>
-          <td class="tal">개인정보 마스킹 제거 - Modal</td>
-          <td class="tal"></td>
+          <td class="tal">플랫폼 고객사관리</td>
+          <td class="tal">개인정보 마스킹 제거 - 팝업</td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'ONM_IA_ADM_SUP_031'}" target="_blank">@/views/ONM_IA_ADM_SUP_031.vue</router-link>
@@ -213,8 +213,8 @@
         </tr>
         <tr>
           <td class="tal">플랫폼 통합관리</td>
-          <td class="tal">공통코드관리</td>
-          <td class="tal"></td>
+          <td class="tal">공통코드 관리</td>
+          <td class="tal">공통코드 관리</td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'ONM_IA_ADM_SUP_040'}" target="_blank">@/views/ONM_IA_ADM_SUP_040.vue</router-link>
@@ -225,11 +225,96 @@
         </tr>
         <tr>
           <td class="tal">플랫폼 통합관리</td>
-          <td class="tal">공통코드관리 상세보기</td>
-          <td class="tal"></td>
+          <td class="tal">공통코드 관리</td>
+          <td class="tal">공통코드 등록</td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'ONM_IA_ADM_SUP_060'}" target="_blank">@/views/ONM_IA_ADM_SUP_060.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">공통코드 관리</td>
+          <td class="tal">공통코드 상세보기</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_070'}" target="_blank">@/views/ONM_IA_ADM_SUP_070.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">공통코드 관리</td>
+          <td class="tal">공통코드 상세보기-팝업</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'OnmIaAdmSup070P'}" target="_blank">@/views/ONM_IA_ADM_SUP_070_P.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">배치작업정보 관리</td>
+          <td class="tal">배치작업정보 관리</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_080'}" target="_blank">@/views/ONM_IA_ADM_SUP_080.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">배치작업정보 관리</td>
+          <td class="tal">배치작업정보 상세보기</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_090'}" target="_blank">@/views/ONM_IA_ADM_SUP_090.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">배치작업정보 관리</td>
+          <td class="tal">배치작업정보 수정</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_100'}" target="_blank">@/views/ONM_IA_ADM_SUP_100.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">배치작업정보 관리</td>
+          <td class="tal">배치작업정보 등록</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_110'}" target="_blank">@/views/ONM_IA_ADM_SUP_110.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">통계관리</td>
+          <td class="tal">충전기 연결포트 통계</td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_120'}" target="_blank">@/views/ONM_IA_ADM_SUP_120.vue</router-link>
           </td>
           <td>-</td>
           <td>-</td>
