@@ -1,5 +1,5 @@
 <template>
-  <div class="grid-wrap mt-3">
+  <div class="grid-wrap mt-2">
     <ag-grid-vue
       style="height: 398px"
       class="ag-theme-alpine"

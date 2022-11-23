@@ -30,41 +30,41 @@ export default {
 </script>
 
 <style scoped>
-  .content-wrap .keyWord-filter{
+  .onmContent .keyWord-filter{
     display: flex;
     align-items: center;
     font-size: 14px;
   }
-  .content-wrap .keyWord-filter .keywordReset-wrap{
+  .onmContent .keyWord-filter .keywordReset-wrap{
     display: flex;
     align-items: center;
     width: 100%;
   }
-  .content-wrap .keyWord-filter .title,
-  .content-wrap .keyWord-filter .keyWord span,
-  .content-wrap .keyWord-filter button{
+  .onmContent .keyWord-filter .title,
+  .onmContent .keyWord-filter .keyWord span,
+  .onmContent .keyWord-filter button{
     flex: 0 0 auto;
   }
-  .content-wrap .keyWord-filter .title{
+  .onmContent .keyWord-filter .title{
     color: #777;
     font-weight: 600;
   }
-  .content-wrap .keyWord-filter .keyWord span{
+  .onmContent .keyWord-filter .keyWord span{
     position: relative;
     letter-spacing: -.9px;
   }
-  .content-wrap .keyWord-filter .keyWord{
+  .onmContent .keyWord-filter .keyWord{
     padding: 0 10px;
     line-height: 16px;
   }
-  .content-wrap .keyWord-filter .keyWord span::before{
+  .onmContent .keyWord-filter .keyWord span::before{
     content: 'ㅣ';
     display: inline-block;
     font-size: 14px;
     color: #ccc;
     padding: 0 3px;
   }
-  .content-wrap .keyWord-filter .keyWord span:first-child::before{
+  .onmContent .keyWord-filter .keyWord span:first-child::before{
     content: '';
     padding-left: 0;
   }

@@ -32,12 +32,12 @@
       </thead>
       <tbody>
         <tr>
-          <td class="tal">Layout</td>
+          <td class="tal">Design</td>
           <td class="tal"></td>
           <td class="tal"></td>
           <td></td>
           <td class="tal">
-            <router-link :to="{name: 'Layout'}" target="_blank">@/views/Layout.vue</router-link>
+            <router-link :to="{name: 'Design'}" target="_blank">@/views/Design.vue</router-link>
           </td>
           <td>-</td>
           <td>-</td>
@@ -152,8 +152,20 @@
           <td>-</td>
         </tr> -->
         <tr>
-          <td class="tal">플랫폼 고객사(CPO) 관리</td>
+          <td class="tal">공통레이아웃</td>
           <td class="tal"></td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'Layout'}" target="_blank">@/views/Layout.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">플랫폼 고객사(CPO) 관리</td>
           <td class="tal"></td>
           <td></td>
           <td class="tal">
@@ -164,8 +176,8 @@
           <td>-</td>
         </tr>
         <tr>
+          <td class="tal">플랫폼 통합관리</td>
           <td class="tal">플랫폼 고객사(CPO) 등록</td>
-          <td class="tal"></td>
           <td class="tal"></td>
           <td></td>
           <td class="tal">
@@ -176,8 +188,8 @@
           <td>-</td>
         </tr>
         <tr>
+          <td class="tal">플랫폼 통합관리</td>
           <td class="tal">플랫폼 고객사(CPO) 상세보기</td>
-          <td class="tal"></td>
           <td class="tal"></td>
           <td></td>
           <td class="tal">
@@ -188,8 +200,8 @@
           <td>-</td>
         </tr>
         <tr>
+          <td class="tal">플랫폼 통합관리</td>
           <td class="tal">개인정보 마스킹 제거 - Modal</td>
-          <td class="tal"></td>
           <td class="tal"></td>
           <td></td>
           <td class="tal">
@@ -198,6 +210,30 @@
           <td>-</td>
           <td>-</td>
           <td>Default-false</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">공통코드관리</td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_040'}" target="_blank">@/views/ONM_IA_ADM_SUP_040.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td class="tal">플랫폼 통합관리</td>
+          <td class="tal">공통코드관리 상세보기</td>
+          <td class="tal"></td>
+          <td></td>
+          <td class="tal">
+            <router-link :to="{name:'ONM_IA_ADM_SUP_060'}" target="_blank">@/views/ONM_IA_ADM_SUP_060.vue</router-link>
+          </td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <!-- <tr>
           <td class="tal">vuetify test</td>

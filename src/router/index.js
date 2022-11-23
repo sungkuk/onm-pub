@@ -11,9 +11,9 @@ const routes = [
     component: PbList
   },
   {
-    path: '/layout',
-    name: 'Layout',
-    component: () => import('@/views/Layout.vue')
+    path: '/design',
+    name: 'Design',
+    component: () => import('@/views/Design.vue')
   },
   {
     path: '/headerTop',
@@ -66,6 +66,11 @@ const routes = [
     component: () => import('@/components/Modal.vue')
   },
   {
+    path: '/Layout',
+    name: 'Layout',
+    component: () => import('@/views/Layout.vue')
+  },
+  {
     path: '/ONM_IA_ADM_SUP_010',
     name: 'ONM_IA_ADM_SUP_010',
     component: () => import('@/views/ONM_IA_ADM_SUP_010.vue')
@@ -85,7 +90,16 @@ const routes = [
     name: 'ONM_IA_ADM_SUP_031',
     component: () => import('@/views/OnmIaAdmSup031.vue')
   },
-
+  {
+    path: '/ONM_IA_ADM_SUP_040',
+    name: 'ONM_IA_ADM_SUP_040',
+    component: () => import('@/views/ONM_IA_ADM_SUP_040.vue')
+  },
+  {
+    path: '/ONM_IA_ADM_SUP_060',
+    name: 'ONM_IA_ADM_SUP_060',
+    component: () => import('@/views/ONM_IA_ADM_SUP_060.vue')
+  },
   
   {
     path: '/test',
