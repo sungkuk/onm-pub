@@ -112,7 +112,7 @@ b,strong{
 .btn.btn-default{
   color: #555;
   height: 40px;
-  padding: 0 10px;
+  padding: 0 14px;
   background-color: #f8f9fd;
   border: 1px solid #d4dde0;
 }
@@ -604,7 +604,9 @@ select.form-control{
   height: 40px;
   color: #fff;
 }
-/* Table */
+/*********************************************************
+ - Table 
+*********************************************************/
 table{
   border-spacing: 0;
   border-collapse: collapse;
@@ -639,6 +641,30 @@ table{
   height: 5px;
   font-size: 16px;
   color: #ea002c;
+}
+.table.tableList table thead th{
+  position: relative;
+  font-weight: 500;
+}
+.table.tableList table thead th,
+.table.tableList table tbody th,
+.table.tableList table tbody td{
+  background-color: #fff;
+  height: 35px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.table.tableList table thead th::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 1px;
+  height: 20px;
+  background-color: #d4dde0;
+}
+.table.tableList table thead th:first-child::before{
+  width: 0;
 }
 /*********************************************************
  - GRID

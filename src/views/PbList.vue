@@ -205,7 +205,7 @@
           <td class="tal">개인정보 마스킹 제거 - 팝업</td>
           <td></td>
           <td class="tal">
-            <router-link :to="{name:'ONM_IA_ADM_SUP_031'}" target="_blank">@/views/ONM_IA_ADM_SUP_031.vue</router-link>
+            <router-link :to="{name:'OnmIaAdmSup030P'}" target="_blank">@/views/ONM_IA_ADM_SUP_030_P.vue</router-link>
           </td>
           <td>-</td>
           <td>-</td>
@@ -250,14 +250,14 @@
         <tr>
           <td class="tal">플랫폼 통합관리</td>
           <td class="tal">공통코드 관리</td>
-          <td class="tal">공통코드 상세보기-팝업</td>
+          <td class="tal">공통코드 상세보기 - 팝업</td>
           <td></td>
           <td class="tal">
             <router-link :to="{name:'OnmIaAdmSup070P'}" target="_blank">@/views/ONM_IA_ADM_SUP_070_P.vue</router-link>
           </td>
           <td>-</td>
           <td>-</td>
-          <td>-</td>
+          <td>Default-false</td>
         </tr>
 
         <tr>
@@ -318,7 +318,7 @@
           </td>
           <td>-</td>
           <td>-</td>
-          <td>-</td>
+          <td>High Chart</td>
         </tr>
         <!-- <tr>
           <td class="tal">vuetify test</td>

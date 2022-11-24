@@ -86,9 +86,9 @@ const routes = [
     component: () => import('@/views/ONM_IA_ADM_SUP_030.vue')
   },
   {
-    path: '/ONM_IA_ADM_SUP_031',
-    name: 'ONM_IA_ADM_SUP_031',
-    component: () => import('@/views/OnmIaAdmSup031.vue')
+    path: '/OnmIaAdmSup030P',
+    name: 'OnmIaAdmSup030P',
+    component: () => import('@/views/ONM_IA_ADM_SUP_030_P.vue')
   },
   {
     path: '/ONM_IA_ADM_SUP_040',

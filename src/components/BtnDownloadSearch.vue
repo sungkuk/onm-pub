@@ -8,8 +8,8 @@
       </ul>
     <button
       type="button"
-      class="btn btn-default btn-gray btn-fixed">
-      초기화
+      class="btn btn-default btn-gray">
+      다운로드 옵션 초기화
     </button>
     <button type="submit"
       class="btn btn-default btn-orange btn-fixed">
