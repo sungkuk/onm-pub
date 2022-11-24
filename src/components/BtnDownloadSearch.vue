@@ -26,14 +26,14 @@ export default {
 </script>
 
 <style scoped>
-  .content-wrap .searchArea .download-info{
+  .searchArea .download-info{
     font-size: 14px;
     margin-bottom: 20px;
     padding: 10px 0;
     border-top: 1px solid #d4dde0;
     border-bottom: 1px solid #d4dde0;
   }
-  .content-wrap .searchArea .download-info li{
+  .searchArea .download-info li{
     color: #555;
     padding-left: 10px;
     text-align: left;

@@ -70,6 +70,7 @@ const routes = [
     name: 'Layout',
     component: () => import('@/views/Layout.vue')
   },
+  // 플랫폼 통합관리
   {
     path: '/ONM_IA_ADM_SUP_010',
     name: 'ONM_IA_ADM_SUP_010',
@@ -134,6 +135,12 @@ const routes = [
     path: '/ONM_IA_ADM_SUP_120',
     name: 'ONM_IA_ADM_SUP_120',
     component: () => import('@/views/ONM_IA_ADM_SUP_120.vue')
+  },
+  // 플랫폼 관리
+  {
+    path: '/ONM_IA_ADM_COM_010',
+    name: 'ONM_IA_ADM_COM_010',
+    component: () => import('@/views/ONM_IA_ADM_COM_010.vue')
   },
 
   {

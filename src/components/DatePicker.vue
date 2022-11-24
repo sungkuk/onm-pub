@@ -9,21 +9,22 @@
     min-width="auto">
     <template v-slot:activator="{ on, attrs }">
       <v-text-field
-        v-model="date"
+        v-model="dateRangeText"
         class="date-picker"
         readonly
         label="날짜/선택"
         solo
         v-bind="attrs"
-        v-on="on"></v-text-field>
+        v-on="on" />
     </template>
     <v-date-picker
       v-model="date"      
       no-title
+      :range="range"
       :weekday-format="getDay"
       :month-format="getMonth"
       :header-date-format="getHeaderTitleMonth">
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-btn
         text
         color="primary"
@@ -42,11 +43,26 @@
 
 <script>
 export default {
+  props: {
+    range: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       menu: false,
-      // date: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10), menu: false
+      // date: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10), menu: false,
+      date: ['']
     }
+  },
+  computed: {
+    dateRangeText () {
+      if(this.range){
+        return this.date.join(' - ')    
+      }
+      return this.date
+    },
   },
   methods: {
 		getDay(date) {
