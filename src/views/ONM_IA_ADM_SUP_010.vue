@@ -69,10 +69,8 @@
     <!-- GRID -->
     <sample-ag-grid />
     <!--// GRID -->
-    <div class="btn-area clearFix">
-      <div class="pull-right">
-        <button type="button" class="btn btn-default btn-orange btn-fixed">등록</button>
-      </div>
+    <div class="btn-area clearFix text-right">
+      <button type="button" class="btn btn-default btn-orange btn-fixed">등록</button>
     </div>
     <!-- 이용가이드 -->
     <sub-title title="이용가이드" />
